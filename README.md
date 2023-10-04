@@ -1,7 +1,9 @@
 # Work Day Scheduler
 ## description
 The work place scheduler can be used to organize your work day itinerary. You can store todos, add reminders, and input any text you would like to save. The site can really help to organize your day!
+<br>
 
+[SchedulerLink](https://migsrkrd.github.io/calender/)
 ## Date Title
 Never get confused on todays date! Take a look at the heading of the page and you will see a constantly adapting current date declaration! The heading uses the [day.js](https://day.js.org/) javascript library to keep the current date updated on the page!
 
