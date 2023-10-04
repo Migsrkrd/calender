@@ -7,8 +7,12 @@ The work place scheduler can be used to organize your work day itinerary. You ca
 ## Date Title
 Never get confused on todays date! Take a look at the heading of the page and you will see a constantly adapting current date declaration! The heading uses the [day.js](https://day.js.org/) javascript library to keep the current date updated on the page!
 
+![Date-Title](/Assets/Screenshot%202023-10-04%20163144.png)
+
 ## Color Coded Text Areas
 Always stay in tune with your time management skills with the color coded text areas. The boxes will be colors grey if it is past time, red if it is the current hour, and green if the hour of the work day has yet to come!
+
+![color-coded-textboxes](/Assets/Screenshot%202023-10-04%20163159.png)
 
 ## Text Input, Save Button, and Local Storage!
 Simply click in the text boxes to add in any information you wish to include! After adding in your work, click the save button on its right side. Your text is now saved within the local storage of the browser! Feel free to refresh the site as many times as you'd like, your info isn't going anywhere until it is cleared by you!
