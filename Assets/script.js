@@ -1,4 +1,6 @@
 
+//the primary function is written in lines 208-281!--------------------------------------------------
+
 function nineAM (){
 var timeOf9 = 9;
 if (timeOf9 < dayjs().hour()){
@@ -25,8 +27,6 @@ else if (timeOf10 > dayjs().hour()) {
 }
 }
 
-
-
 function elevenAM (){
 var timeOf11 = 11;
 if (timeOf11 < dayjs().hour()){
@@ -40,8 +40,6 @@ else if (timeOf11 > dayjs().hour()) {
 }
 }
   
-
-
 function twelvePM (){
 var timeOf12 = 12;
 if (timeOf12 < dayjs().hour()){
@@ -55,8 +53,6 @@ else if (timeOf12 > dayjs().hour()) {
 }
 }
     
-
-
 function onePM (){
 var timeOf1 = 13;
 if (timeOf1 < dayjs().hour()){
@@ -70,8 +66,6 @@ else if (timeOf1 > dayjs().hour()) {
 }
 }
       
-
-
 function twoPM (){
 var timeOf2 = 14;
 if (timeOf2 < dayjs().hour()){
@@ -85,8 +79,6 @@ else if (timeOf2 > dayjs().hour()) {
 }
 }
         
-
-
 function threePM (){
 var timeOf3 = 15;
 if (timeOf3 < dayjs().hour()){
@@ -100,8 +92,6 @@ else if (timeOf3 > dayjs().hour()) {
 }
 }
           
-
-
 function fourPM (){
 var timeOf4 = 16;
 if (timeOf4 < dayjs().hour()){
@@ -114,8 +104,6 @@ else if (timeOf4 > dayjs().hour()) {
   $("#hour-4").addClass("future");
 }
 }
-
-
 
 function fivePM (){
 var timeOf5 = 17;
@@ -136,72 +124,45 @@ function display9(){
   $("#hour-9 textarea").text(input9);
 }
 
-
-
-
 function display10(){
   var input10 = localStorage.getItem("10amText");
   $("#hour-10 textarea").text(input10);
 }
-
-
-
 
 function display11(){
   var input11 = localStorage.getItem("11amText");
   $("#hour-11 textarea").text(input11);
 }
 
-
-
-
 function display12(){
   var input12 = localStorage.getItem("12pmText");
   $("#hour-12 textarea").text(input12);
 }
-
-
-
 
 function display1(){
   var input1 = localStorage.getItem("1pmText");
   $("#hour-1 textarea").text(input1);
 }
 
-
-
-
 function display2(){
   var input2 = localStorage.getItem("2pmText");
   $("#hour-2 textarea").text(input2);
 }
-
-
-
 
 function display3(){
   var input3 = localStorage.getItem("3pmText");
   $("#hour-3 textarea").text(input3);
 }
 
-
-
-
 function display4(){
   var input4 = localStorage.getItem("4pmText");
   $("#hour-4 textarea").text(input4);
 }
 
-
-
-
 function display5(){
   var input5 = localStorage.getItem("5pmText");
   $("#hour-5 textarea").text(input5);
 }
-
-
-
 
 //----------------------------------------------------------------------------------------------
 
