@@ -1,6 +1,6 @@
 
 //the primary function is written in lines 208-281!--------------------------------------------------
-
+//-------------------class declarers for current time-----------------------------------------
 function nineAM (){
 var timeOf9 = 9;
 if (timeOf9 < dayjs().hour()){
@@ -118,7 +118,7 @@ else if (timeOf5 > dayjs().hour()) {
 }
 }
               
-
+//-------------------------------displaying saved text to correlating textboxes-----------------------
 function display9(){
   var input9 = localStorage.getItem("9amText");
   $("#hour-9 textarea").text(input9);
@@ -164,11 +164,11 @@ function display5(){
   $("#hour-5 textarea").text(input5);
 }
 
-//----------------------------------------------------------------------------------------------
+//----------------------------------Primary function------------------------------------------------------------
 
 $(function () {
   var saveBtn9 = $("#hour-9 button");
-  var saveBtn10 = $("#hour-10 button");
+  var saveBtn10 = $("#hour-10 button"); //---------declared variables---------------------
   var saveBtn11 = $("#hour-11 button");
   var saveBtn12 = $("#hour-12 button");
   var saveBtn1 = $("#hour-1 button");
@@ -188,10 +188,12 @@ $(function () {
   var hour5 = $("#hour-5 textarea")[0]
   var textAreaArray = [hour9, hour10, hour11, hour12, hour1, hour2, hour3, hour4, hour5]
 
-  $("#currentDay").text(today);
+  $("#currentDay").text(today); //--------date for header---------------------------------------------------------------------------------------------------------
   
-  nineAM();tenAM();elevenAM();twelvePM();onePM();twoPM();threePM();fourPM();fivePM();
+  nineAM();tenAM();elevenAM();twelvePM();onePM();twoPM();threePM();fourPM();fivePM(); //calling text box color functions ---------------------------------------------
   
+//-----------------------------click save button to local storage--------------------------------------------------------------------------------------------------
+
   saveBtn9.on("click", function(){
     textAreaArray;
     localStorage.setItem("9amText", textAreaArray[0].value);
@@ -237,5 +239,10 @@ $(function () {
     localStorage.setItem("5pmText", textAreaArray[8].value);
   })
 
+//--------------------------------calling display saved text functions------------------------------------------------------------------
+
   display9(); display10(); display11(); display12(); display1(); display2(); display3(); display4(); display5();
 });
+//-------------------------------------------------------------------------------------------------------------------------------------
+
+  
